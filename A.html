@@ -1,0 +1,57 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 my-auto">
+                <div class="card card-shadow shadow-lg animated fadeInUp">
+                    <div class="card-body">
+                        <div class="messages" id="chat-messages">
+                            <div class="message user-message">
+                                <div class="avatar-container">
+                                    <!-- chatgpt头像 -->
+                                    <img src="gpt.png" class="avatar rounded-circle" alt="User Avatar">
+                                </div>
+                                <div class="message-content">
+                                    <p><strong>User:</strong> Hello, ChatGPT!</p>
+                                </div>
+                            </div>
+                            <div class="message chatgpt-message bg-light-gray">
+                                <div class="avatar-container">
+                                    <!-- user头像 -->
+                                    <img src="user.png" class="avatar rounded-circle" alt="ChatGPT Avatar">
+                                </div>
+                                <div class="message-content">
+                                    <p><strong>ChatGPT:</strong> Hi there! How can I help you today?</p>
+                                </div>
+                            </div>
+                            <!-- Add more messages here as needed -->
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="user-input" placeholder="Type your message...">
+                            <div class="input-group-append">
+                                <button class="btn btn-success" onclick="sendMessage()">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="your_script.js"></script>
+</body>
+
+</html>
